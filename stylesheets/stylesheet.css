@@ -2,6 +2,7 @@ body {
   background-color: #333;
   background-position: fixed;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
 h1 {
   text-align: center;
@@ -9,14 +10,27 @@ h1 {
   font-size: 300%;
   color: #fff;
   font-weight: light;
+  margin-top: .5em;
+  margin-bottom: 1em;
 }
-
-@media (min-width: 800px) {
+h1 small{
+  color: #fff;
+  opacity: 0.7;
+}
+.logo {
+  max-height: 0.9em;
+  vertical-align: top;
+  margin-top: .1em;
+}
+@media (min-width: 768px) {
     h1 {
       text-align: center;
       font-size: 600%;
       position: fixed;
       z-index: 3;
+    }
+    h1 small{
+      font-size: .5em;
     }
     .h1-hidden {
       display: none;
@@ -32,7 +46,7 @@ h1 {
 }
 
 .splash {
-  padding: 5% 0 0 0;
+  padding: 2.5% 0 0 0;
   background-color: #6ae;
   position: relative;
   z-index: 2;
@@ -202,6 +216,29 @@ h1 {
   display: block;
   color: #39e;
   margin-top: 5%;
+}
+
+.feature-grid {
+  text-align: center
+}
+
+.feature {
+  display: inline-block;
+  width: 80%;
+  padding-right: 2%;
+  vertical-align: top;
+}
+
+@media (min-width: 480px) {
+  .feature {
+    width: 50%
+  }
+}
+
+@media (min-width: 992px) {
+  .feature {
+    width: 25%
+  }
 }
 
 footer {

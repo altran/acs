@@ -53,12 +53,13 @@ h1 small{
 }
 .table {
   width: 100%;
-  padding-bottom: 3%;
+  padding-bottom: 2.5%;
   border:none;
-  background-color: #ccc;
+  background-color: #aaa;
   margin:0;
 }
 .table-above {
+  background-color: #ccc;
   position: relative;
   z-index: 2;
 }
@@ -71,7 +72,7 @@ h1 small{
 }
 .printer {
   width: 70%;
-  padding-bottom: 15%;
+  padding-bottom: 10%;
   background: #222;
   margin: auto;
   position: relative;
@@ -84,7 +85,7 @@ h1 small{
   width: 90%;
   left: 5%;
   z-index: 1;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   position: absolute;
   bottom: -20%;
   background: rgba(200,200,200,0.5);
@@ -108,17 +109,20 @@ h1 small{
 .printer-tray {
   margin-top: -10%;
   width: 65%;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   background: #111;
   margin: auto;
   position: relative;
   z-index: 1;
 }
+.printer-tray:before, printer-tray:after {
+
+}
 
 .cv {
   position: relative;
   margin-top: -100%;
-  margin-bottom: 110%;
+  margin-bottom: 43%;
   left: 50%;
   z-index: 1;
   background: #fff;
@@ -130,8 +134,8 @@ h1 small{
           transition: all 1s;
 }
 .cv-at-bottom {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-bottom: -60%;
 }
 
 .cv:after {
@@ -142,7 +146,7 @@ h1 small{
 
 .cv-profile-picture {
   background-color: #ccc;
-  background-image: url(../images/profile.png);
+  background-image: url(../img/profile.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -165,9 +169,18 @@ h1 small{
   bottom: 0;
 }
 
-.features {
-  background-color: #eee;
-  padding: 5%;
+.p-line, .h-line {
+  display: block; 
+  background-color: #ccc;
+  height: 1em;
+  margin-bottom: .5em;
+  width: 100%;
+}
+.h-line {
+  height: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 20%;
 }
 
 #laptop {
@@ -218,7 +231,7 @@ h1 small{
   position: relative;
   background-size: cover; 
   background-position: top center;
-  background-image: url('../images/acs.png');
+  background-image: url('../img/acs.png');
   height: 0; 
   padding-bottom: 56.25%; 
   position: relative;
@@ -231,6 +244,31 @@ h1 small{
   display: block;
   color: #39e;
   margin-top: 5%;
+}
+
+.description {
+  background-color: #456;
+  padding: 5%;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.super-lead {
+  font-size: 200%;
+  font-weight: 300;
+}
+
+@media (min-width: 992px) {
+  .super-lead {
+    font-size: 300%
+  }
+}
+
+.features {
+  background-color: #eee;
+  padding: 5%;
+  position: relative;
+  z-index: 2;
 }
 
 .feature-grid {

@@ -9,13 +9,13 @@ h1 {
   width: 100%;
   font-size: 300%;
   color: #fff;
-  font-weight: light;
+  font-weight: 300;
   margin-top: .5em;
   margin-bottom: 1em;
 }
 h1 small{
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .logo {
   max-height: 0.9em;
@@ -140,10 +140,25 @@ h1 small{
   padding-bottom: 141.4%;
 }
 
+.cv-profile-picture {
+  background-color: #ccc;
+  background-image: url(../images/profile.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 14%;
+  padding-bottom: 20%;
+  position: absolute;
+  top: 7%;
+  left: 6%;
+}
+
 .cv-content {
   position: absolute;
   overflow: hidden;
   padding: 5%;
+  padding-left: 25%;
   top: 0;
   left: 0;
   right: 0;

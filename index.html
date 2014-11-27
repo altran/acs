@@ -33,6 +33,7 @@
                 <div class="p-line" style="width:35%"></div>
               </div>
             </div>
+            <video src="img/acssearch.webm#t=0,9" id="acsvideo" poster="img/acssearch.png"></video>
           </div>
         </div>
       </div>
@@ -140,6 +141,14 @@
       $('h1').toggleClass('h1-hidden', printCondition);
       $('.printer').toggleClass('printer-on', printCondition);
     }
+
+    $('#acsvideo')
+    .on("pause", function(){ 
+      $('#acsvideo').hide();
+    })
+    .on("click", function(){ 
+      $('#acsvideo').get(0).play();
+    });
     </script>
   </body>
 </html>

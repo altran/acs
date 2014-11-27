@@ -238,6 +238,17 @@ h1 small{
   overflow: hidden;
 }
 
+#laptop video {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
 .icon-lg {
   font-size: 500%;
   text-align: center;
